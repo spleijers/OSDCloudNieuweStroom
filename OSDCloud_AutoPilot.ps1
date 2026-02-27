@@ -98,14 +98,14 @@ $LogoPictureBox.Location = New-Object System.Drawing.Point(10, 20)
 
 # Erstelle den ersten Button (quadratisch und groesser)
 $Button1 = New-Object System.Windows.Forms.Button
-$Button1.Text = "AutoPilot`nRegistrierung`n`nTag: InCloud"
+$Button1.Text = "AutoPilot`nRegistrierung`n`nTag: UD-Ring2-KlantenService"
 $Button1.Size = New-Object System.Drawing.Size(100, 100)
 $Button1.Location = New-Object System.Drawing.Point(10, 120)
 $Button1.Add_Click({
 
 $Form.WindowState = "Minimized" # Minimiere das GUI-Fenster
 cd $workingDirectory
-.\Get-WindowsAutoPilotInfo.ps1 -GroupTag InCloud -Online -Assign
+.\Get-WindowsAutoPilotInfo.ps1 -GroupTag UD-Ring2-KlantenService -Online -Assign
 $Form.Close() # Schliesse das Programm
 })
 
@@ -174,7 +174,7 @@ $precheck.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
 
 # Erstellen Sie ein Label für den Countdown-Text
 $LabelClose = New-Object System.Windows.Forms.Label
-$LabelClose.Text = [System.Text.Encoding]::UTF8.GetString([System.Text.Encoding]::Default.GetBytes("Das Gerät ist bereits im AutoPilot registriert.`nDas Fenster wird in 15 Sekunden automatisch geschlossen!"))
+$LabelClose.Text = [System.Text.Encoding]::UTF8.GetString([System.Text.Encoding]::Default.GetBytes("Device is allready AutoPilot registered.`nThis window will close in 15 seconds!"))
 $LabelClose.AutoSize = $true
 $LabelClose.ForeColor = [System.Drawing.Color]::Green
 $LabelClose.Location = New-Object System.Drawing.Point(10, 380)

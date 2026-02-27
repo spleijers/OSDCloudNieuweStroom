@@ -113,7 +113,7 @@ Start-Process PowerShell -ArgumentList "-NoL -C Invoke-WebPSScript https://raw.g
 #Start-Process PowerShell -ArgumentList "-NoL -C Start-OOBEDeploy" -Wait
 
 Write-Host -ForegroundColor DarkGray "Executing Cleanup Script"
-Start-Process PowerShell -ArgumentList "-NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/wbilab/osdcloud/main/CleanUp.ps1" -Wait
+Start-Process PowerShell -ArgumentList "-NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/spleijers/OSDCloudNieuweStroom/main/CleanUp.ps1" -Wait
 
 Write-Host -ForegroundColor DarkGray "Restarting Computer"
 Start-Process PowerShell -ArgumentList "-NoL -C Restart-Computer -Force" -Wait
