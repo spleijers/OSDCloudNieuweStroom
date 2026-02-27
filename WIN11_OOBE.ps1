@@ -56,20 +56,20 @@ $OSDCloudGUIParam = @'
                         ],
     "ClearDiskConfirm":  false,
     "restartComputer":  false,
-    "updateDiskDrivers":  true,
-    "updateFirmware":  true,
-    "updateNetworkDrivers":  true,
+    "updateDiskDrivers":  false,
+    "updateFirmware":  false,
+    "updateNetworkDrivers":  false,
     "SkipAutopilot":  true,
     "SkitAutopilotOOBE":  true,
     "SkipOOBEDeploy":  true,
     "WindowsUpdate": false,
     "WindowsUpdateDrivers": false,
-    "HPIAALL": true,
-    "HPIADrivers": true,
-    "HPIAFirmware": true,
-    "HPIASoftware": true,
-    "HPTPMUpdate": true,
-    "HPBIOSUpdate": true
+    "HPIAALL": false,
+    "HPIADrivers": false,
+    "HPIAFirmware": false,
+    "HPIASoftware": false,
+    "HPTPMUpdate": false,
+    "HPBIOSUpdate": false
 }
 '@
 If (!(Test-Path "X:\OSDCloud\Automate")) {
